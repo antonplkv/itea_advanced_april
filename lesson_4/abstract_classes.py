@@ -26,10 +26,13 @@ class AbstractCar(abc.ABC):
 class Car(AbstractCar):
 
     def __init__(self):
-        pass
+        self.x = 1
+
+    def move(self):
+        super().move()
 
     def open_door(self):
         super().open_door()
 
 
-Car().move()
+print(dir(Car()))
