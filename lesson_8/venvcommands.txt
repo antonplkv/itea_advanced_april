@@ -1,0 +1,11 @@
+###Windows###
+py -m pip --user install virtualenv #install
+py -m venv venv #create venv with name venv
+env\Scripts\activate.bat#activate virtual environment
+deactivate #deactivate venv
+
+###Linux###
+pip install --user virtualenv
+python3 -m venv venv
+source venv/bin/activate
+deactivate
